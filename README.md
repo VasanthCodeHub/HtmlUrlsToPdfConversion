@@ -189,7 +189,7 @@ CoroutineScope(Dispatchers.IO).launch {
 
 ### Default File Naming
 
-By default, files are named using the pattern: `BGR_Insurance_Policy_DD_MM_YYYY.pdf`
+By default, files are named using the pattern: `DD_MM_YYYY.pdf`
 
 You can customize this using the `fileName` parameter.
 
@@ -296,3 +296,4 @@ For issues, questions, or feature requests, please open an issue on the project 
 ---
 
 **Made with ❤️ for Android developers**
+
