@@ -183,7 +183,7 @@ CoroutineScope(Dispatchers.IO).launch {
 |-----------|------|---------|-------------|
 | `url` | String | Required | The URL of the webpage to convert |
 | `fileName` | String | Auto-generated | Name of the PDF file to create |
-| `relativePath` | String | "Download/Azzetta/asset/Insurance" | Relative path within Downloads directory |
+| `relativePath` | String | "Download/pdf" | Relative path within Downloads directory |
 | `userAgent` | String | Mozilla/5.0... | User agent string for HTTP requests |
 | `timeout` | Int | 30000 | Connection timeout in milliseconds |
 
@@ -296,4 +296,5 @@ For issues, questions, or feature requests, please open an issue on the project 
 ---
 
 **Made with ❤️ for Android developers**
+
 
