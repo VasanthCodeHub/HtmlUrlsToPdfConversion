@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F8F9FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="error_color">#F44336</color>
+    <color name="feature_card_background">#F3F4F6</color>
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_color_dark">#1976D2</color>
+    <color name="primary_color_light">#64B5F6</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="warning_color">#FF9800</color>
+    <string name="app_name">HtmlsToPdf</string>
+    <string name="convert_to_pdf">Convert to PDF</string>
+    <string name="convert_web_pages_to_pdf_documents">Convert web pages to PDF documents</string>
+    <string name="converting_to_pdf">Converting to PDF...</string>
+    <string name="features">✨ Features</string>
+    <string name="high_quality_pdf_conversion_n_preserves_original_formatting_n_saves_to_downloads_folder_n_works_with_most_websites">• High-quality PDF conversion\n• Preserves original formatting\n• Saves to Downloads folder\n• Works with most websites</string>
+    <string name="html_to_pdf_converter">HTML to PDF Converter</string>
+    <string name="https_example_com">https://example.com</string>
+    <string name="tip_make_sure_the_url_is_accessible_and_starts_with_http_or_https">💡 Tip: Make sure the URL is accessible and starts with http:// or https://</string>
+    <string name="website_url">Website URL</string>
+    <style name="Base.Theme.HtmlsToPdf" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.HtmlsToPdf" parent="Base.Theme.HtmlsToPdf"/>
+</resources>

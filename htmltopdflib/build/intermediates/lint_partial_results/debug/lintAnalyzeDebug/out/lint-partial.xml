@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.11.0" type="partial_results">
+    <map id="UnusedResources">
+        <location id="R.color.error_color"
+            file="${:htmltopdflib*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="20"
+            column="12"
+            startOffset="680"
+            endLine="20"
+            endColumn="30"
+            endOffset="698"/>
+        <location id="R.color.primary_color_dark"
+            file="${:htmltopdflib*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="6"
+            column="12"
+            startOffset="192"
+            endLine="6"
+            endColumn="37"
+            endOffset="217"/>
+        <location id="R.color.warning_color"
+            file="${:htmltopdflib*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="21"
+            column="12"
+            startOffset="726"
+            endLine="21"
+            endColumn="32"
+            endOffset="746"/>
+        <location id="R.string.app_name"
+            file="${:htmltopdflib*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="2"
+            column="13"
+            startOffset="24"
+            endLine="2"
+            endColumn="28"
+            endOffset="39"/>
+        <entry
+            name="model"
+            string="color[background_color(U),text_primary(U),text_secondary(U),card_background(U),card_stroke(U),primary_color(U),primary_color_light(U),feature_card_background(U),primary_color_dark(D),success_color(U),error_color(D),warning_color(D)],drawable[circular_background(U),ic_download(U),ic_pdf_convert(U),ic_web(U)],id[appIcon(U),titleText(U),subtitleText(U),inputCard(U),urlInput(U),downloadButton(U),progressLayout(U),progressBar(U),progressText(U),featuresCard(D)],layout[activity_html_to_pdf(U)],string[html_to_pdf_converter(U),convert_web_pages_to_pdf_documents(U),website_url(U),https_example_com(U),tip_make_sure_the_url_is_accessible_and_starts_with_http_or_https(U),convert_to_pdf(U),converting_to_pdf(U),features(U),high_quality_pdf_conversion_n_preserves_original_formatting_n_saves_to_downloads_folder_n_works_with_most_websites(U),app_name(D)],style[Theme_HtmlsToPdf(U),Widget_MaterialComponents_TextInputLayout_OutlinedBox(R),Base_Theme_HtmlsToPdf(U),Theme_Material3_DayNight_NoActionBar(R)];1a^0^c^e^1b^1^10^1c^2^11^3^12^4^1d^5^f^26^1e^1f^20^d^13^6^15^21^7^16^22^23,25^27,27^28;;;"/>
+    </map>
+
+</incidents>

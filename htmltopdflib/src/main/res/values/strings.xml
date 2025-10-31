@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HtmlsToPdf</string>
+    <string name="html_to_pdf_converter">HTML to PDF Converter</string>
+    <string name="convert_web_pages_to_pdf_documents">Convert web pages to PDF documents</string>
+    <string name="website_url">Website URL</string>
+    <string name="tip_make_sure_the_url_is_accessible_and_starts_with_http_or_https">💡 Tip: Make sure the URL is accessible and starts with http:// or https://</string>
+    <string name="convert_to_pdf">Convert to PDF</string>
+    <string name="converting_to_pdf">Converting to PDF...</string>
+    <string name="features">✨ Features</string>
+    <string name="high_quality_pdf_conversion_n_preserves_original_formatting_n_saves_to_downloads_folder_n_works_with_most_websites">• High-quality PDF conversion\n• Preserves original formatting\n• Saves to Downloads folder\n• Works with most websites</string>
+    <string name="https_example_com">https://example.com</string>
+</resources>

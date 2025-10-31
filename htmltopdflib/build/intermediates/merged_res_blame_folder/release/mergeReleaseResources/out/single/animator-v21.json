@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.htmltopdflib-release-32:/animator-v21/m3_appbar_state_list_animator.xml",
+        "source": "com.example.htmltopdflib-material-1.12.0-6:/animator-v21/m3_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "com.example.htmltopdflib-release-32:/animator-v21/design_appbar_state_list_animator.xml",
+        "source": "com.example.htmltopdflib-material-1.12.0-6:/animator-v21/design_appbar_state_list_animator.xml"
+    }
+]

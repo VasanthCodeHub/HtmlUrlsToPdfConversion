@@ -1,0 +1,147 @@
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:49: Warning: A newer version of com.itextpdf:itext7-core than 7.2.3 is available: 9.3.0 [NewerVersionAvailable]
+    implementation("com.itextpdf:itext7-core:7.2.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:50: Warning: A newer version of com.itextpdf:html2pdf than 4.0.3 is available: 6.2.1 [NewerVersionAvailable]
+    implementation("com.itextpdf:html2pdf:4.0.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:51: Warning: A newer version of org.jsoup:jsoup than 1.15.3 is available: 1.21.2 [NewerVersionAvailable]
+    implementation("org.jsoup:jsoup:1.15.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+C:\Users\Admin\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcpkix-jdk15on\1.70\f81e5af49571a9d5a109a88f239a73ce87055417\bcpkix-jdk15on-1.70.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+C:\Users\Admin\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcpkix-jdk15on\1.70\f81e5af49571a9d5a109a88f239a73ce87055417\bcpkix-jdk15on-1.70.jar: Warning: checkClientTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+C:\Users\Admin\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcpkix-jdk15on\1.70\f81e5af49571a9d5a109a88f239a73ce87055417\bcpkix-jdk15on-1.70.jar: Warning: checkServerTrusted is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers [TrustAllX509TrustManager]
+
+   Explanation for issues of type "TrustAllX509TrustManager":
+   This check looks for X509TrustManager implementations whose
+   checkServerTrusted or checkClientTrusted methods do nothing (thus trusting
+   any certificate chain) which could result in insecure network traffic
+   caused by trusting arbitrary TLS/SSL certificates presented by peers.
+
+   https://goo.gle/TrustAllX509TrustManager
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\src\main\res\layout\activity_html_to_pdf.xml:6: Warning: Possible overdraw: Root element paints background @color/background_color with a theme that also paints a background (inferred theme is @style/Theme_HtmlsToPdf) [Overdraw]
+    android:background="@color/background_color">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\src\main\res\values\strings.xml:8: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="converting_to_pdf">Converting to PDF...</string>
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\src\main\res\layout\activity_html_to_pdf.xml:96: Warning: Missing autofillHints attribute [Autofill]
+                    <EditText
+                     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:49: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.itextpdf:itext7-core:7.2.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:50: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.itextpdf:html2pdf:4.0.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\build.gradle.kts:51: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("org.jsoup:jsoup:1.15.3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\src\main\res\layout\activity_html_to_pdf.xml:14: Warning: Missing contentDescription attribute on image [ContentDescription]
+        <ImageView
+         ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+C:\Users\Admin\AndroidStudioProjects\HtmlsToPdf\htmltopdflib\src\main\java\com\example\htmltopdflib\HtmlToPdfActivity.kt:94: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                downloadButton.text = "✓ PDF Created"
+                                       ~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+0 errors, 14 warnings
